@@ -1,6 +1,13 @@
 # yzhan-react-responsive-content
 
-A powerful and flexible React component for creating responsive content with automatic media query generation.
+![npm](https://img.shields.io/npm/v/yzhan-react-responsive-content)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/yzhan-react-responsive-content)
+![npm](https://img.shields.io/npm/dt/yzhan-react-responsive-content)
+[![GitHub license](https://img.shields.io/github/license/mantoufan/yzhanReactResponsiveContent)](https://github.com/mantoufan/yzhanReactResponsiveContent/blob/main/LICENSE)
+![ie10+](https://img.shields.io/badge/IE-10-skyblue)
+
+A powerful and flexible React component for creating responsive content with automatic media query generation.  
+为响应式内容自动生成媒体查询.
 
 ## Features
 
@@ -31,23 +38,24 @@ yarn add yzhan-react-responsive-content
 Here's a basic example of how to use the `ResponsiveContent` component:
 
 ```jsx
-import ResponsiveContent from 'yzhan-react-responsive-content';
+import ResponsiveContent from "yzhan-react-responsive-content";
 
 function MyComponent() {
   return (
-    <ResponsiveContent 
+    <ResponsiveContent
       set={[
-        ['Mobile Content', 320],
-        ['Tablet Content', 768],
-        ['Desktop Content']
+        ["Mobile Content", 320],
+        ["Tablet Content", 768],
+        ["Desktop Content"],
       ]}
-      display='block'
+      display="block"
     />
   );
 }
 ```
 
 In this example:
+
 - Content will display as follows:
   - 'Mobile Content' for screen widths up to 320px
   - 'Tablet Content' for screen widths between 321px and 768px
@@ -58,21 +66,26 @@ In this example:
 You can use more complex content types, including React components. When using React components or elements, remember to provide a unique `key` prop to each one:
 
 ```jsx
-import ResponsiveContent from 'yzhan-react-responsive-content';
+import ResponsiveContent from "yzhan-react-responsive-content";
 
 function MyComponent() {
   return (
-    <ResponsiveContent 
+    <ResponsiveContent
       set={[
-        [<MobileLayout key="mobile">Mobile specific content</MobileLayout>, 320],
+        [
+          <MobileLayout key="mobile">Mobile specific content</MobileLayout>,
+          320,
+        ],
         [<TabletLayout key="tablet">Tablet optimized view</TabletLayout>, 768],
-        [<React.Fragment key="desktop">
-          <DesktopHeader />
-          <DesktopContent />
-          <DesktopFooter />
-        </React.Fragment>]
+        [
+          <React.Fragment key="desktop">
+            <DesktopHeader />
+            <DesktopContent />
+            <DesktopFooter />
+          </React.Fragment>,
+        ],
       ]}
-      display='flex'
+      display="flex"
     />
   );
 }
