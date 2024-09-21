@@ -1,0 +1,30 @@
+{
+  "name": "yzhan-react-responsive-content",
+  "version": "1.0.0",
+  "description": "A React component for creating responsive content with automatic media query generation",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "responsive",
+    "media-query",
+    "component"
+  ],
+  "author": "Shon Wu",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/react": "^18.0.0",
+    "rollup": "^2.70.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.5.0"
+  }
+}
