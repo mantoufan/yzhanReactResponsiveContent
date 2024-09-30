@@ -9,6 +9,10 @@
 A powerful and flexible React component for creating responsive content with automatic media query generation.  
 为响应式内容自动生成媒体查询.
 
+# Demo
+
+![GIF animation](https://s2.loli.net/2024/09/30/8PDlowU1MjFe7gc.gif)
+
 ## Features
 
 - **Server-side rendering**: Works out of the box with SSR, no client-side rendering required.
