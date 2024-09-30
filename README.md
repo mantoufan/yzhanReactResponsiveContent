@@ -11,7 +11,8 @@ A powerful and flexible React component for creating responsive content with aut
 
 # Demo
 
-![GIF animation](https://s2.loli.net/2024/09/30/8PDlowU1MjFe7gc.gif)
+![GIF animation](https://s2.loli.net/2024/09/30/8PDlowU1MjFe7gc.gif)  
+[Demo Link](https://mantoufan.github.io/yzhanReactResponsiveContent/)
 
 ## Features
 
