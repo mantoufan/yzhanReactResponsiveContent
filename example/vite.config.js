@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "https://github.com/mantoufan/yzhanReactResponsiveContent",
+  base: "https://mantoufan.github.io",
   build: {
     outDir: path.resolve(__dirname, "../docs"),
     emptyOutDir: true,
